@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/groceybackground" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="40dp"
+                android:text="@string/descrition"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/firstItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food item"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/firstItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/secondItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Food item"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/secondItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/thirdItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Food item"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/thirdItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/fourthItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Food item"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/fourthItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/fifthItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Food item" />
+
+            <EditText
+                android:id="@+id/fifthItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="8dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D38F24"
+                android:onClick="proceed"
+                android:text="proceed" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/calculatePrice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D38F24"
+        android:onClick="proceed"
+        android:text="proceed" />
+
+
+</LinearLayout>
